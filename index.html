@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
+
+
     <title>Map Animation</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
@@ -13,11 +15,29 @@
 
 <body>
     <div id="map"></div>
-    <div class="map-overlay top">
+       
+    <div class="navbar">
+        <a href="https://chriscupit.github.io/chriscupit.github.io-portfolio/">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Projects <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="https://chriscupit.github.io/">Github Instructions</a>
+                <a href="https://chriscupit.github.io/pacmen.io/">Pacmen Project</a>
+                <a href="https://chriscupit.github.io/eyeproject.io/">Eye Project</a>
+                <a href="https://chriscupit.github.io/ballproject.io/">Ball Project</a>
+                <a href="https://chriscupit.github.io/walkboston.io/">Walk Boston Project</a>
+                <a href="https://chriscupit.github.io/FirstWebpage">First Webpage Project</a>
+                <a href="https://chriscupit.github.io/busanimation/">Bus Stop Animation Project</a>
+                
+            </div>
+            
+        </div>
+    </div>
+   
+    <div class="map-overlay">
         <button style="font-size: 2em" onclick="move()">
             Show stops between MIT and Harvard
         </button>
-       
     </div>
    
     <script src="./mapanimation.js"></script>
